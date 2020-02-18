@@ -1,0 +1,7 @@
+---
+# defaults file for ansible-role-zsh
+
+# .zshrc config
+
+zsh_user: "{{ ansible_user_id }}"
+zsh_group: users
