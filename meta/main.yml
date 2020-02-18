@@ -28,7 +28,7 @@ galaxy_info:
   #
   #
   platforms:
-    name: ArchLinux
+    - name: ArchLinux
 
   galaxy_tags:
   - system
