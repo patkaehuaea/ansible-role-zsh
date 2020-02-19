@@ -38,6 +38,6 @@
     backup: yes
 
 - name: Change shell for user running playbook to zsh
-    user:
-      name: "{{ ansible_user_id }}"
-      shell: /bin/zsh
+  user:
+    name: "{{ ansible_user_id }}"
+    shell: /bin/zsh
