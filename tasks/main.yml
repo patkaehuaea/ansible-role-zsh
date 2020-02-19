@@ -1,5 +1,18 @@
 ---
 
+- name: Run the equivalent of "pacman -Sy" before installing zsh
+  pacman:
+    update_cache: yes
+  become: yes
+  when: ansible_os_family == 'Archlinux'
+
+- name: Install zsh with pacman
+  pacman:
+    name: zsh
+    state: present
+  become: yes
+  when: ansible_os_family == 'Archlinux'
+
 - name: Clone oh-my-zsh git repository
   git:
     repo: https://github.com/ohmyzsh/ohmyzsh.git
